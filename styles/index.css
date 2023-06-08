@@ -1,22 +1,43 @@
-body {
-  background-color: #c6c3c3;
-  background-image: linear-gradient(45deg, #f1d4d4af, #000000);
-  background-size: cover;
-  background-blend-mode: overlay;
-}
 h2 {
   margin-left: 1rem;
   text-decoration: underline;
   text-decoration-color: #5a5959;
-  text-decoration-thickness: 2px;
+ 
   text-underline-offset: 6px;
 }
-p {
-  margin-left: 1rem;
+
+h1,
+h3 {
+  margin-top: 5rem;
 }
-h1 {
+
+p,
+.read-more-btn {
+  margin-left: 1rem;
+  line-height: 1.6rem;
+  font-size: 1.1rem;
+}
+.text {
   display: flex;
   justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 6rem;
+}
+
+h1,
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+h3 {
+  margin-bottom: 10rem;
+}
+
+h4 {
+  margin-left: 10rem;
+  margin-top: 5rem;
+  font-size: 1.8rem;
 }
 
 .image-index {
@@ -27,12 +48,13 @@ h1 {
 .card1,
 .card2,
 .card3 {
-    background-color: #c6c3c3;
-    background-image: linear-gradient(45deg, #f1d4d4af, #232323);
-    background-size: cover;
-    background-blend-mode: overlay;
+  background-color: #c6c3c3;
+  background-image: linear-gradient(45deg, #f1d4d4af, #232323);
+  background-size: cover;
+  background-blend-mode: overlay;
   border-radius: 1.5rem;
-  outline: 1.5px solid whitesmoke;
+  
+  box-shadow: 2px 2px 7px 7px rgb(114, 114, 114);
 }
 
 .card-container {
@@ -40,4 +62,47 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 7px;
   row-gap: 2px;
+}
+
+.links {
+  text-decoration: none;
+  color: blue;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+.profil-img {
+  max-width: 5%;
+  margin-left: 2rem;
+  border-radius: 5rem;
+}
+
+.exam-text,
+.ccp-text {
+  max-width: 35rem;
+}
+
+.text-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.smp-text {
+  background-image: url(/images/amy-leigh-barnard-EYMWacuuRR8-unsplash.jpg);
+}
+.ccp-text {
+  background-image: url(/images/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg);
+}
+.exam-text {
+  background-image: url(/images/mike-meyers-v8XaVfyo41Q-unsplash.jpg);
+}
+.smp-text,
+.ccp-text,
+.exam-text {
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  outline: 5px solid white;
+  opacity: 0.7;
 }

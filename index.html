@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio homepage</title>
     <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/stylee.css" />
+    <script src="/javascript/index.js" defer></script>
   </head>
   <body>
-    <h1>My portfolio</h1>
+    <div class="nav-bar-container">
+      <p class="name">
+        Bjarte Oliversen Løken's Portfolio
+        <img
+          class="profil-img"
+          src="/images/Screenshot 2023-06-06 at 14-04-28 Bjarte Oliversen (@bjarteoliversen) Instagram.png"
+          alt="image of me before parachuting"
+        />
+      </p>
+      <nav class="nav-bar">
+        <a class="nav-links" href="/contact.html">Contact me</a>
+        <a class="nav-links" href="/about.html">About me</a>
+      </nav>
+    </div>
+
+    <h1>My school projects</h1>
+    <p class="text">
+      Theese are three of my finished projects, first year at Noroff
+    </p>
     <div class="card-container">
       <div class="card1">
         <h2>My exam project</h2>
@@ -17,6 +37,20 @@
           src="/images/blog.png"
           alt="My training blog"
         />
+        <p>
+          My Github repository:
+          <a
+            class="links"
+            href="https://github.com/Noroff-FEU-Assignments/project-exam-1-bjarte1234567"
+            >Github link <img src="/images/github.png" alt="github icon"
+          /></a>
+        </p>
+        <p>
+          My Netlify link:
+          <a class="links" href="https://ornate-mousse-aad4ff.netlify.app/"
+            >Netlify link <img src="/images/internet.png" alt="www icon"
+          /></a>
+        </p>
       </div>
       <div class="card2">
         <h2>Cross course project</h2>
@@ -25,8 +59,17 @@
           src="/images/Uten navn.png"
           alt="image of my cross course project"
         />
-        <p>This is my cross course project. This task was about making a museum site
-            for children between 7-15 year olds.
+        <p>
+          My Github repository:
+          <a class="links" href="https://github.com/bjarte1234567/Portfolio"
+            >Github link <img src="/images/github.png" alt="Github icon"
+          /></a>
+        </p>
+        <p>
+          My netlify link:
+          <a class="links" href="https://grand-narwhal-b1d5fe.netlify.app/">
+            Netlify link <img src="/images/internet.png" alt="www icon"
+          /></a>
         </p>
       </div>
       <div class="card3">
@@ -36,7 +79,63 @@
           src="/images/Semester.project.png"
           alt="my semester project"
         />
+        <p>
+          My Github repository:
+          <a
+            class="links"
+            href="https://github.com/bjarte1234567/Semester-Prjocet"
+            >Github link <img src="/images/github.png" alt="github logo"
+          /></a>
+        </p>
+        <p>
+          My Netlify link:
+          <a
+            class="links"
+            href="https://scintillating-kashata-4f4fe1.netlify.app"
+            >Netlify link <img src="/images/internet.png" alt="WWW icon"
+          /></a>
+        </p>
       </div>
     </div>
+
+    <h3>A little bit about my projects</h3>
+    <div class="text-container">
+      <div class="exam-text">
+        <h4>My exam project</h4>
+        <p>
+          My exam project is a blog site about workout's and eating habits. This
+          exam is a mix of JavaScript, HTML and CSS. This site contains a
+          carousel, modal and a detail site which is done with vanilla
+          JavaScript. I have also done a fetch request to the posts from
+          WordPress, the rest is mainly done with CSS and HTML.
+        </p>
+      </div>
+      <div class="ccp-text">
+        <h4>Cross course project</h4>
+        <p>
+          My Cross course project is one of the first thing we started on. We
+          got to choose between three tasks, and i chose the gaming site
+          Gamehub. Gamehub is a place were you can buy pc games and console
+          games. Since this is one of the first projects, and there was no
+          requirement's of using JavaScript, which means this site is lacking
+          some features. i used JavaScript to fetch the images and title's. So
+          this site is almost purely HTML and CSS
+        </p>
+      </div>
+      <div class="smp-text">
+        <h4>Semester Project</h4>
+        <p id="p-text">
+          My semester project is about a website made for 7-15 year old's, and
+          contains images and a design to appeal to them. My Design here lean
+          towards the younger age group, because of the font choice and design
+          choice. My semester project is purely made out of CSS and HTML, this
+          is because we had not learned JavaScript yet.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>By Bjarte Oliversen Løken 12.06.23</p>
+    </footer>
   </body>
 </html>
