@@ -2,7 +2,7 @@ h2 {
   margin-left: 1rem;
   text-decoration: underline;
   text-decoration-color: #5a5959;
- 
+
   text-underline-offset: 6px;
 }
 
@@ -31,7 +31,8 @@ h3 {
   font-size: 3rem;
 }
 h3 {
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
+  margin-top: 15rem;
 }
 
 h4 {
@@ -53,7 +54,6 @@ h4 {
   background-size: cover;
   background-blend-mode: overlay;
   border-radius: 1.5rem;
-  
   box-shadow: 2px 2px 7px 7px rgb(114, 114, 114);
 }
 
@@ -73,14 +73,8 @@ h4 {
   text-decoration: underline;
 }
 
-.profil-img {
-  max-width: 5%;
-  margin-left: 2rem;
-  border-radius: 5rem;
-}
-
 .exam-text,
-.ccp-text {
+.ccp-text, .smp-text {
   max-width: 35rem;
 }
 
@@ -103,6 +97,69 @@ h4 {
 .exam-text {
   background-size: cover;
   color: rgb(255, 255, 255);
-  outline: 5px solid white;
-  opacity: 0.7;
+  outline: 5px solid rgb(255, 255, 255);
+  opacity: 0.8;
+}
+.parent-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1600px) {
+  .card-container,
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    max-width: 70%;
+    margin-top: 5rem;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    margin-left: 10rem;
+  }
+  .smp-text,
+  .ccp-text,
+  .exam-text {
+    margin-top: 3rem;
+  }
+  
+  .text-container {
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card1,
+  .card2,
+  .card3 {
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 3rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px){
+h3{
+  font-size: 1.5rem;
+}
+h4{
+  font-size: 1.3rem;
+}
+p, .p-text{
+  font-size: 0.8rem;
+}
 }

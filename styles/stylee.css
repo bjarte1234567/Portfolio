@@ -6,6 +6,15 @@ body {
   margin: 0 auto;
 }
 
+h1 {
+  font-size: 3rem;
+}
+.profil-img {
+  max-width: 5%;
+  margin-left: 2rem;
+  border-radius: 5rem;
+}
+
 .name {
   font-size: 3rem;
   display: flex;
@@ -39,8 +48,34 @@ body {
   text-decoration: underline;
 }
 
-.footer{
-background-color: white;
-padding: 2rem;
-margin-top: 5rem;
+.footer {
+  background-image: linear-gradient(45deg, #fee0b2af, #f6ab29);
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .name {
+    font-size: 2rem;
+  }
+  .profil-img{
+    max-width: 10%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .name {
+    font-size: 1rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  h2, h3 .nav-links{
+    font-size: 1.2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+
 }

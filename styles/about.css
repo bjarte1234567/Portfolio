@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+h3 {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+
+.profil-img {
+  max-width: 13%;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  max-width: 50rem;
+  line-height: 1.8rem;
+}
+.image-about {
+  max-width: 15%;
+}
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .profil-img {
+    max-width: 10%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .image-about {
+    max-width: 20%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .image-about {
+    max-width: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .image-about {
+    max-width: 40%;
+  }
+}
