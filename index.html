@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/stylee.css" />
-    
+    <script src="/javascript/modal.js" defer></script>
   </head>
   <body>
     <div class="nav-bar-container">
@@ -43,6 +43,7 @@
             class="image-index"
             src="/images/blog.png"
             alt="My training blog"
+            onclick="openModal(this)"
           />
           <p>
             My Github repository:
@@ -65,6 +66,7 @@
             class="image-index"
             src="/images/Uten navn.png"
             alt="image of my cross course project"
+            onclick="openModal(this)"
           />
           <p>
             My Github repository:
@@ -87,6 +89,7 @@
             class="image-index"
             src="/images/Semester.project.png"
             alt="my semester project"
+            onclick="openModal(this)"
           />
           <p>
             My Github repository:
@@ -146,5 +149,10 @@
     <footer class="footer">
       <p>By Bjarte Oliversen Løken 12.06.23</p>
     </footer>
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+    
   </body>
 </html>
